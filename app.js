@@ -3,6 +3,7 @@ const fs = require('fs');
 const https = require('https')
 
 const url = 'https://jsonplaceholder.typicode.com/users';
+
 const getAPI = () => {
     https.request(url, (res) => {
         let data = '';
